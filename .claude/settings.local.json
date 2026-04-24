@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git log *)",
+      "Bash(git config *)",
+      "Bash(git commit -m 'chore: initial project setup for Lilia HOME e-commerce *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(netstat -ano)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\aleja\\OneDrive\\Escritorio\\Proyects\\LiliaHome\\.git"
+    ]
+  }
+}

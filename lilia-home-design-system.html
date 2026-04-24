@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lilia HOME · Design System</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Cinzel:wght@400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #F5EFE6; font-family: 'Lato', sans-serif; color: #3D2B1F; padding: 48px 32px; }
+  h1 { font-family: 'Dancing Script', cursive; font-size: 48px; color: #6B5140; margin-bottom: 4px; }
+  h2 { font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 0.2em; color: #9E8A73; margin-bottom: 40px; }
+  .section-title { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.18em; color: #9E8A73; text-transform: uppercase; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 1px solid #E8D5B7; }
+  .row { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 48px; }
+  .swatch { border-radius: 12px; overflow: hidden; width: 160px; box-shadow: 0 4px 16px rgba(61,43,31,0.10); }
+  .swatch-color { height: 100px; }
+  .swatch-info { background: #FDFAF6; padding: 12px 14px; }
+  .swatch-name { font-family: 'Cinzel', serif; font-size: 12px; color: #3D2B1F; font-weight: 600; }
+  .swatch-hex { font-size: 11px; color: #9E8A73; margin-top: 2px; font-family: monospace; }
+  .swatch-use { font-size: 10px; color: #9E8A73; margin-top: 4px; }
+  .type-sample { background: #FDFAF6; border-radius: 14px; padding: 28px 32px; margin-bottom: 16px; box-shadow: 0 4px 16px rgba(61,43,31,0.07); }
+  .type-label { font-size: 10px; letter-spacing: 0.15em; color: #9E8A73; text-transform: uppercase; margin-bottom: 12px; }
+  .btn-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 48px; }
+  .btn { padding: 12px 28px; border-radius: 10px; font-family: 'Lato', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.07em; cursor: pointer; border: none; }
+  .btn-primary { background: #6B5140; color: #FDFAF6; }
+  .btn-outline { background: transparent; color: #6B5140; border: 1.5px solid #6B5140; }
+  .btn-accent { background: #C4956A; color: #FDFAF6; }
+  .btn-ghost { background: #E8D5B7; color: #3D2B1F; }
+  .grid-icons { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 48px; }
+  .icon-box { background: #FDFAF6; border-radius: 10px; padding: 16px 20px; display: flex; align-items: center; gap: 10px; font-size: 13px; color: #6B5140; box-shadow: 0 2px 8px rgba(61,43,31,0.07); }
+  .spacing-box { display: flex; align-items: flex-end; gap: 12px; margin-bottom: 48px; }
+  .sp { background: #C4956A; border-radius: 4px; opacity: 0.7; }
+  .sp-label { font-size: 10px; color: #9E8A73; text-align: center; margin-top: 6px; }
+  footer { text-align: center; color: #9E8A73; font-size: 12px; margin-top: 32px; padding-top: 24px; border-top: 1px solid #E8D5B7; }
+</style>
+</head>
+<body>
+
+<div style="max-width:900px; margin:0 auto;">
+
+  <!-- Header -->
+  <div style="text-align:center; margin-bottom:56px;">
+    <h1>Lilia HOME</h1>
+    <h2>— DESIGN SYSTEM · 2024 —</h2>
+    <p style="font-size:13px;color:#9E8A73;">Paleta de colores, tipografías y componentes base</p>
+  </div>
+
+  <!-- Paleta de Colores -->
+  <p class="section-title">Paleta de Colores</p>
+  <div class="row">
+    <div class="swatch">
+      <div class="swatch-color" style="background:#F5EFE6;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Cream</div>
+        <div class="swatch-hex">#F5EFE6</div>
+        <div class="swatch-use">Fondo principal</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#E8D5B7;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Sand</div>
+        <div class="swatch-hex">#E8D5B7</div>
+        <div class="swatch-use">Fondo secundario / separadores</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#9E8A73;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Taupe</div>
+        <div class="swatch-hex">#9E8A73</div>
+        <div class="swatch-use">Texto secundario / íconos</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#C4956A;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Accent Gold</div>
+        <div class="swatch-hex">#C4956A</div>
+        <div class="swatch-use">Destacados / hover / estrellas</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#6B5140;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Brown</div>
+        <div class="swatch-hex">#6B5140</div>
+        <div class="swatch-use">Botones primarios / precios</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#3D2B1F;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Dark</div>
+        <div class="swatch-hex">#3D2B1F</div>
+        <div class="swatch-use">Títulos / encabezados</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#FDFAF6; border:1px solid #E8D5B7;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">White Warm</div>
+        <div class="swatch-hex">#FDFAF6</div>
+        <div class="swatch-use">Tarjetas / modales / cards</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tipografías -->
+  <p class="section-title">Tipografías</p>
+
+  <div class="type-sample">
+    <div class="type-label">Display — Dancing Script · Títulos, logo "Lilia", captions del carrusel</div>
+    <div style="font-family:'Dancing Script',cursive; font-size:52px; color:#3D2B1F; line-height:1;">Lilia</div>
+    <div style="font-family:'Dancing Script',cursive; font-size:28px; color:#C4956A; margin-top:8px;">Aromas que transforman tu hogar</div>
+  </div>
+
+  <div class="type-sample">
+    <div class="type-label">Serif — Cinzel · Subtítulos, precios, nombres de productos, etiquetas admin</div>
+    <div style="font-family:'Cinzel',serif; font-size:36px; color:#3D2B1F;">Productos Premium</div>
+    <div style="font-family:'Cinzel',serif; font-size:18px; color:#6B5140; margin-top:8px;">Aromatizador línea hogar 500 ML</div>
+    <div style="font-family:'Cinzel',serif; font-size:13px; color:#9E8A73; letter-spacing:0.15em; margin-top:8px;">— HOME — · CONTACTO · ADMIN</div>
+  </div>
+
+  <div class="type-sample">
+    <div class="type-label">Sans-serif — Lato · Cuerpo de texto, descripciones, botones, UI general</div>
+    <div style="font-family:'Lato',sans-serif; font-size:16px; color:#3D2B1F; line-height:1.7;">Formulado especialmente para ambientes de niños. Suave y seguro, sin alcohol. Una experiencia sensorial única para toda la familia.</div>
+    <div style="font-family:'Lato',sans-serif; font-size:13px; color:#9E8A73; margin-top:8px; font-weight:300;">Texto secundario · Lato Light 300</div>
+    <div style="font-family:'Lato',sans-serif; font-size:13px; color:#6B5140; margin-top:4px; font-weight:700; letter-spacing:0.07em;">BOTÓN PRIMARIO · Lato Bold 700</div>
+  </div>
+
+  <!-- Botones -->
+  <p class="section-title">Componentes — Botones</p>
+  <div class="btn-row">
+    <div>
+      <button class="btn btn-primary">Agregar al carrito</button>
+      <div style="font-size:10px;color:#9E8A73;margin-top:6px;text-align:center;">Primario</div>
+    </div>
+    <div>
+      <button class="btn btn-outline">Ver detalles</button>
+      <div style="font-size:10px;color:#9E8A73;margin-top:6px;text-align:center;">Outline</div>
+    </div>
+    <div>
+      <button class="btn btn-accent">Confirmar por WhatsApp</button>
+      <div style="font-size:10px;color:#9E8A73;margin-top:6px;text-align:center;">Accent</div>
+    </div>
+    <div>
+      <button class="btn btn-ghost">Cancelar</button>
+      <div style="font-size:10px;color:#9E8A73;margin-top:6px;text-align:center;">Ghost</div>
+    </div>
+  </div>
+
+  <!-- Espaciado -->
+  <p class="section-title">Sistema de Espaciado (base 8px)</p>
+  <div class="spacing-box">
+    <div><div class="sp" style="width:8px;height:8px;"></div><div class="sp-label">4</div></div>
+    <div><div class="sp" style="width:16px;height:16px;"></div><div class="sp-label">8</div></div>
+    <div><div class="sp" style="width:24px;height:24px;"></div><div class="sp-label">12</div></div>
+    <div><div class="sp" style="width:32px;height:32px;"></div><div class="sp-label">16</div></div>
+    <div><div class="sp" style="width:48px;height:48px;"></div><div class="sp-label">24</div></div>
+    <div><div class="sp" style="width:64px;height:64px;"></div><div class="sp-label">32</div></div>
+    <div><div class="sp" style="width:96px;height:96px;"></div><div class="sp-label">48</div></div>
+    <div><div class="sp" style="width:128px;height:128px;"></div><div class="sp-label">64</div></div>
+  </div>
+
+  <!-- Bordes -->
+  <p class="section-title">Border Radius</p>
+  <div class="row" style="margin-bottom:48px; align-items:center;">
+    <div style="text-align:center;"><div style="width:60px;height:60px;background:#E8D5B7;border-radius:4px;margin:0 auto;"></div><div style="font-size:10px;color:#9E8A73;margin-top:8px;">4px<br>Tags</div></div>
+    <div style="text-align:center;"><div style="width:60px;height:60px;background:#E8D5B7;border-radius:8px;margin:0 auto;"></div><div style="font-size:10px;color:#9E8A73;margin-top:8px;">8px<br>Botones</div></div>
+    <div style="text-align:center;"><div style="width:60px;height:60px;background:#E8D5B7;border-radius:12px;margin:0 auto;"></div><div style="font-size:10px;color:#9E8A73;margin-top:8px;">12px<br>Inputs</div></div>
+    <div style="text-align:center;"><div style="width:60px;height:60px;background:#E8D5B7;border-radius:16px;margin:0 auto;"></div><div style="font-size:10px;color:#9E8A73;margin-top:8px;">16px<br>Cards</div></div>
+    <div style="text-align:center;"><div style="width:60px;height:60px;background:#E8D5B7;border-radius:20px;margin:0 auto;"></div><div style="font-size:10px;color:#9E8A73;margin-top:8px;">20px<br>Modales</div></div>
+    <div style="text-align:center;"><div style="width:60px;height:60px;background:#E8D5B7;border-radius:50%;margin:0 auto;"></div><div style="font-size:10px;color:#9E8A73;margin-top:8px;">50%<br>Avatares</div></div>
+  </div>
+
+  <footer>© 2024 Lilia HOME — Design System generado para uso interno</footer>
+</div>
+</body>
+</html>
